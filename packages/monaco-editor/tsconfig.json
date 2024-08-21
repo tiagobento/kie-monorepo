@@ -1,0 +1,7 @@
+{
+  "extends": "@kie-tools/tsconfig/tsconfig.esm.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "dist/standalone"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "@kie-tools/image-builder",
+  "version": "0.0.0",
+  "description": "",
+  "license": "Apache-2.0",
+  "keywords": [],
+  "homepage": "https://github.com/apache/incubator-kie-tools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/incubator-kie-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/incubator-kie-tools/issues"
+  },
+  "bin": {
+    "kie-tools--image-builder": "bin.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "bin.js",
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "install": "rimraf dist && tsc && pnpm write-readme",
+    "write-readme": "run-script-os",
+    "write-readme:darwin:linux": "LC_ALL=en echo '```' > README.md && ./bin.js --help >> README.md && echo '```' >> README.md",
+    "write-readme:win32": "echo 'Nothing to do.'"
+  },
+  "dependencies": {
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@kie-tools/tsconfig": "workspace:*",
+    "@types/yargs": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "run-script-os": "^1.1.6",
+    "typescript": "^5.5.3"
+  }
+}

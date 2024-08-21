@@ -1,0 +1,40 @@
+{
+  "name": "@kie-tools-core/monaco-editor",
+  "version": "0.0.0",
+  "description": "Single-file build of monaco-editor",
+  "license": "MIT",
+  "keywords": [
+    "monaco"
+  ],
+  "types": "dist/standalone/monaco.min.d.ts",
+  "main": "dist/standalone/monaco.min.js",
+  "files": [
+    "dist/standalone"
+  ],
+  "scripts": {
+    "build:dev": "rimraf dist && webpack --mode development",
+    "build:prod": "rimraf dist && webpack --mode production",
+    "lint": "run-script-if --bool \"$(build-env linters.run)\" --then \"kie-tools--eslint ./src\""
+  },
+  "dependencies": {
+    "monaco-editor": "^0.39.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@kie-tools/eslint": "workspace:*",
+    "@kie-tools/root-env": "workspace:*",
+    "@kie-tools/tsconfig": "workspace:*",
+    "css-loader": "^5.2.6",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.5.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+  }
+}
