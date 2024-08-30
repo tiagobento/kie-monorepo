@@ -23,7 +23,8 @@
     "requiredPreinstalledCliCommands": [
       "python3",
       "pip3",
-      "make"
+      "make",
+      "s2i"
     ]
   }
 }
