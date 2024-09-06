@@ -25,6 +25,7 @@ function prepareEnv() {
     # keep it on alphabetical order
     unset KOGITO_DATA_INDEX_QUARKUS_PROFILE
 }
+
 function configure() {
     configure_data_index_quarkus_profile
 }

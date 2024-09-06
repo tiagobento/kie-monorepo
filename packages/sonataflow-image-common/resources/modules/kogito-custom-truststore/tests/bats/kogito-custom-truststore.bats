@@ -31,11 +31,11 @@ teardown() {
 }
 
 @test "fail case when the custom certificate is not present in the expected path" {
+    prepareEnv
+
     local expected=1
     export CUSTOM_TRUSTSTORE=my-cert.jks
 
-    prepareEnv
-    preConfigure
     run configure
 
     echo "Result is [$status] and expected is [${expected}]" >&2
@@ -45,6 +45,8 @@ teardown() {
 }
 
 @test "success case when the custom certificate is present in the expected path" {
+    prepareEnv
+
     local expected=0
     local pathExpected="${KOGITO_HOME}/certs/custom-truststore/my-cert.jks"
 
@@ -52,8 +54,6 @@ teardown() {
     touch ${KOGITO_HOME}/certs/custom-truststore/my-cert.jks
     CUSTOM_TRUSTSTORE=my-cert.jks
 
-    prepareEnv
-    preConfigure
     run configure
 
     echo "Result is [$status] and expected is [${expected}]" >&2
@@ -66,7 +66,6 @@ teardown() {
     local expected=0
 
     prepareEnv
-    preConfigure
     run configure
 
     echo "Result is [$status] and expected is [${expected}]" >&2

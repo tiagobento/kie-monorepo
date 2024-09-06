@@ -33,3 +33,6 @@ execSync(
   python3 ./resources/scripts/versions_manager.py --bump-to ${buildEnv.env.sonataflowImageCommon.version} --source-folder ./resources`,
   { stdio: "inherit" }
 );
+
+// Install bats
+execSync(`. ./resources/scripts/install_bats.sh`, { stdio: "inherit" });

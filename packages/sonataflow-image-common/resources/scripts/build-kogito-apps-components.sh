@@ -32,7 +32,12 @@ KOGITO_APPS_FOLDER_NAME="kogito-apps"
 
 # Read entries before sourcing
 imageName="${1}"
-gitBranch="${2:-main}"
+gitBranch="${2}"
+if [ -z "${gitBranch}" ]; then
+    echo "The gitBranch argument is required"
+    exit 1
+fi
+gitBranch=${gitBranch//-[sS][nN][aA][pP][sS][hH][oO][tT]/}
 gitUri="${3:-https://github.com/apache/${KOGITO_APPS_REPO_NAME}.git}"
 contextDir=""
 shift $#
