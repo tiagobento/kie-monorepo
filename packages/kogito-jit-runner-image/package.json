@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@kie/kogito-data-index-ephemeral-image",
+  "name": "@kie/kogito-jit-runner-image",
   "version": "0.0.0",
   "description": "",
   "license": "Apache-2.0",

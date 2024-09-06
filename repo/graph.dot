@@ -141,6 +141,7 @@ digraph G {
   "@kie-tools/sonataflow-image-common" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie/kogito-data-index-ephemeral-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie/kogito-data-index-postgresql-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
+  "@kie/kogito-jit-runner-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie/kogito-jobs-service-allinone-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie/kogito-jobs-service-ephemeral-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie/kogito-jobs-service-postgresql-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
@@ -430,6 +431,7 @@ digraph G {
   "@kie/kogito-base-builder-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
   "@kie/kogito-data-index-ephemeral-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
   "@kie/kogito-data-index-postgresql-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
+  "@kie/kogito-jit-runner-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
   "@kie/kogito-jobs-service-allinone-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
   "@kie/kogito-jobs-service-ephemeral-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
   "@kie/kogito-jobs-service-postgresql-image" -> "@kie-tools/sonataflow-image-common" [ style = "dashed", color = "black" ];
