@@ -571,6 +571,10 @@ digraph G {
   "@kie-tools/sonataflow-image-common" -> "@kie-tools/root-env" [ style = "dashed", color = "black" ];
   "@kie-tools/sonataflow-operator" -> "@kie-tools/sonataflow-builder-image" [ style = "dashed", color = "black" ];
   "@kie-tools/sonataflow-operator" -> "@kie-tools/sonataflow-devmode-image" [ style = "dashed", color = "black" ];
+  "@kie-tools/sonataflow-operator" -> "@kie/kogito-data-index-ephemeral-image" [ style = "dashed", color = "black" ];
+  "@kie-tools/sonataflow-operator" -> "@kie/kogito-data-index-postgresql-image" [ style = "dashed", color = "black" ];
+  "@kie-tools/sonataflow-operator" -> "@kie/kogito-jobs-service-ephemeral-image" [ style = "dashed", color = "black" ];
+  "@kie-tools/sonataflow-operator" -> "@kie/kogito-jobs-service-postgresql-image" [ style = "dashed", color = "black" ];
   "@kie-tools/sonataflow-quarkus-devui" -> "@kie-tools/serverless-workflow-dev-ui-webapp" [ style = "dashed", color = "black" ];
   "@kie-tools/storybook-base" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "blue" ];
   "@kie-tools/storybook-base" -> "@kie-tools/eslint" [ style = "dashed", color = "blue" ];

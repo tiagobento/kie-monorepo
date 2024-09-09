@@ -10942,6 +10942,18 @@ importers:
       '@kie-tools/sonataflow-devmode-image':
         specifier: workspace:*
         version: link:../sonataflow-devmode-image
+      '@kie/kogito-data-index-ephemeral-image':
+        specifier: workspace:*
+        version: link:../kogito-data-index-ephemeral-image
+      '@kie/kogito-data-index-postgresql-image':
+        specifier: workspace:*
+        version: link:../kogito-data-index-postgresql-image
+      '@kie/kogito-jobs-service-ephemeral-image':
+        specifier: workspace:*
+        version: link:../kogito-jobs-service-ephemeral-image
+      '@kie/kogito-jobs-service-postgresql-image':
+        specifier: workspace:*
+        version: link:../kogito-jobs-service-postgresql-image
       replace-in-file:
         specifier: ^7.1.0
         version: 7.1.0
