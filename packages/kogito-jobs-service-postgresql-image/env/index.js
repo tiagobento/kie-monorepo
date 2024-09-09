@@ -32,7 +32,7 @@ module.exports = composeEnv([rootEnv], {
       description: "The image registry account.",
     },
     KOGITO_JOBS_SERVICE_POSTGRESQL_IMAGE__name: {
-      default: "incubator-kie-kogito-jobs-service-ephemeral",
+      default: "incubator-kie-kogito-jobs-service-postgresql",
       description: "The image name.",
     },
     KOGITO_JOBS_SERVICE_POSTGRESQL_IMAGE__buildTag: {

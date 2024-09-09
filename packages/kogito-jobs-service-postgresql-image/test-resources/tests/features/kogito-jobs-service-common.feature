@@ -17,9 +17,9 @@
 # under the License.
 #
 
-@docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral
-@docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral
-@docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral
+@docker.io/apache/incubator-kie-kogito-jobs-service-postgres
+@docker.io/apache/incubator-kie-kogito-jobs-service-postgres
+@docker.io/apache/incubator-kie-kogito-jobs-service-postgres
 Feature: Kogito-jobs-service common feature.
 
   Scenario: verify if the events is correctly enabled
