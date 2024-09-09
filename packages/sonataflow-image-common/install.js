@@ -35,4 +35,6 @@ execSync(
 );
 
 // Install bats
-execSync(`. ./resources/scripts/install_bats.sh`, { stdio: "inherit" });
+if (process.platform !== "win32") {
+  execSync(`. ./resources/scripts/install_bats.sh`, { stdio: "inherit" });
+}
