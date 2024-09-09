@@ -37,6 +37,15 @@ execSync(
   { stdio: "inherit" }
 );
 
+// Creates a symlink to the bats installation dir
+try {
+  fs.symlinkSync(`${sonataflowImageCommonDir}/bats-home`, path.resolve(__dirname, "./bats-home"), "dir");
+} catch (err) {
+  if (err.code !== "EEXIST") {
+    throw err;
+  }
+}
+
 // Find and read the -image.yaml file
 const resourcesPath = path.resolve(__dirname, "./resources");
 const files = fs.readdirSync(resourcesPath);
