@@ -17,7 +17,7 @@
     "install": "node install.js",
     "test": "run-script-os",
     "test:linux:darwin": "mkdir -p dist-tests && rm -rf dist-tests/* && make -C ./resources bats || $(build-env tests.ignoreFailures) && mv dist-tests/report.xml dist-tests/junit-report.xml || true",
-    "test:win32": "Tests are skipped in Windows"
+    "test:win32": "echo \"Tests are skipped in Windows\""
   },
   "devDependencies": {
     "@kie-tools/python-venv": "workspace:*",

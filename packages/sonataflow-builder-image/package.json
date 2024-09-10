@@ -33,7 +33,7 @@
     "test:linux:darwin": "run-script-if --bool \"$(build-env tests.run)\" --then \"pnpm test:setup\" \"pnpm test:run\" --finally \"pnpm test:cleanup\"",
     "test:run": "make -C ./build bats || $(build-env tests.ignoreFailures)",
     "test:setup": "pnpm copy-assets && pnpm copy-test-assets && mkdir -p dist-tests && rm -rf dist-tests/*",
-    "test:win32": "Tests are skipped in Windows"
+    "test:win32": "echo \"Tests are skipped in Windows\""
   },
   "devDependencies": {
     "@kie-tools/python-venv": "workspace:*",
