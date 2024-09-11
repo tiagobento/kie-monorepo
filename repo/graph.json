@@ -2249,6 +2249,11 @@
         "weight": 1
       },
       {
+        "source": "@kie-tools/serverless-logic-web-tools-base-builder-image",
+        "target": "@kie/kogito-base-builder-image",
+        "weight": 1
+      },
+      {
         "source": "@kie-tools/serverless-logic-web-tools-swf-builder-image",
         "target": "@kie-tools/serverless-logic-web-tools-swf-builder-image-env",
         "weight": 1
@@ -2291,6 +2296,11 @@
       {
         "source": "@kie-tools/serverless-logic-web-tools-swf-dev-mode-image",
         "target": "@kie-tools/serverless-logic-web-tools-swf-dev-mode-image-env",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/serverless-logic-web-tools-swf-dev-mode-image",
+        "target": "@kie/kogito-base-builder-image",
         "weight": 1
       },
       {

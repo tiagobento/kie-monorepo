@@ -9431,6 +9431,9 @@ importers:
       '@kie-tools/serverless-logic-web-tools-base-builder-image-env':
         specifier: workspace:*
         version: link:../serverless-logic-web-tools-base-builder-image-env
+      '@kie/kogito-base-builder-image':
+        specifier: workspace:*
+        version: link:../kogito-base-builder-image
       rimraf:
         specifier: ^3.0.2
         version: 3.0.2
@@ -9501,6 +9504,9 @@ importers:
       '@kie-tools/serverless-logic-web-tools-swf-dev-mode-image-env':
         specifier: workspace:*
         version: link:../serverless-logic-web-tools-swf-dev-mode-image-env
+      '@kie/kogito-base-builder-image':
+        specifier: workspace:*
+        version: link:../kogito-base-builder-image
       rimraf:
         specifier: ^3.0.2
         version: 3.0.2

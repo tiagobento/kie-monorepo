@@ -22,7 +22,7 @@
     "copy:m2-for-sonataflow-quarkus-devui": "mvn dependency:copy-dependencies -Dmdep.useRepositoryLayout=true -Dmdep.copyPom=true -DexcludeTransitive=true -DoutputDirectory=./dist-dev/quarkus-app-m2",
     "copy:quarkus-app": "cp -R ./node_modules/@kie-tools/serverless-logic-web-tools-swf-deployment-quarkus-app/ ./dist-dev/quarkus-app && mkdir -p ./dist-dev/quarkus-app/src/main/resources/META-INF/resources/ && rm -rf ./dist-dev/quarkus-app/node_modules ./dist-dev/quarkus-app/install.js ./dist-dev/quarkus-app/env ./dist-dev/quarkus-app/package.json",
     "copy:sonataflow-deployment-webapp": "cp -R ./node_modules/sonataflow-deployment-webapp/dist/* ./dist-dev/quarkus-app/src/main/resources/META-INF/resources",
-    "image:docker:build": "run-script-if --bool $([ $(command -v docker) ] && echo true || echo false) --then \"docker build --ulimit nofile=5000:5000 $(echo $(build-env swfDevModeImageEnv.buildTag) | xargs printf -- \"-t $(build-env swfDevModeImageEnv.registry)/$(build-env swfDevModeImageEnv.account)/$(build-env swfDevModeImageEnv.name):%s\n\" | xargs echo) --build-arg KOGITO_IMAGE_TAG=$(build-env swfDevModeImage.kogitoImageTag) .\" --else \"echo Docker not found, skipping image build.\"",
+    "image:docker:build": "run-script-if --bool $([ $(command -v docker) ] && echo true || echo false) --then \"docker build --ulimit nofile=5000:5000 $(echo $(build-env slwtSwfDevModeImageEnv.buildTag) | xargs printf -- \"-t $(build-env slwtSwfDevModeImageEnv.registry)/$(build-env slwtSwfDevModeImageEnv.account)/$(build-env slwtSwfDevModeImageEnv.name):%s\n\" | xargs echo) --build-arg BASE_IMAGE_TAG=$(build-env slwtSwfDevModeImage.baseImageTag) .\" --else \"echo Docker not found, skipping image build.\"",
     "install": "node install.js"
   },
   "devDependencies": {
@@ -30,6 +30,7 @@
     "@kie-tools/root-env": "workspace:*",
     "@kie-tools/serverless-logic-web-tools-swf-deployment-quarkus-app": "workspace:*",
     "@kie-tools/serverless-logic-web-tools-swf-dev-mode-image-env": "workspace:*",
+    "@kie/kogito-base-builder-image": "workspace:*",
     "rimraf": "^3.0.2",
     "run-script-os": "^1.1.6",
     "sonataflow-deployment-webapp": "workspace:*"

@@ -46,7 +46,7 @@ module.exports = composeEnv([rootEnv], {
         registry: getOrDefault(this.vars.KOGITO_DATA_INDEX_POSTGRESQL_IMAGE__registry),
         account: getOrDefault(this.vars.KOGITO_DATA_INDEX_POSTGRESQL_IMAGE__account),
         name: getOrDefault(this.vars.KOGITO_DATA_INDEX_POSTGRESQL_IMAGE__name),
-        tag: getOrDefault(this.vars.KOGITO_DATA_INDEX_POSTGRESQL_IMAGE__buildTag),
+        buildTag: getOrDefault(this.vars.KOGITO_DATA_INDEX_POSTGRESQL_IMAGE__buildTag),
         version: require("../package.json").version,
       },
     };

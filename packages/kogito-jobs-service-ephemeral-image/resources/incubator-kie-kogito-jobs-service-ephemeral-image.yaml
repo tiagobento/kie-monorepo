@@ -25,7 +25,7 @@ description: "Runtime image for Kogito in memory Jobs Service"
 
 labels:
   - name: "org.kie.kogito.version"
-    value: "999-SNAPSHOT"
+    value: "### SET ME DURING BUILD PROCESS ###"
   - name: "maintainer"
     value: "Apache KIE <dev@kie.apache.org>"
   - name: "io.k8s.description"

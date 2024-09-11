@@ -97,7 +97,7 @@ def pnpmUpdateProjectVersion(String projectVersion) {
 */
 def pnpmUpdateKogitoVersion(String kogitoVersion, String imagesTag) {
     sh """#!/bin/bash -el
-    pnpm update-kogito-version-to --maven ${kogitoVersion} --images-tag ${imagesTag}
+    pnpm update-kogito-version-to --maven ${kogitoVersion}
     """.trim()
 }
 
