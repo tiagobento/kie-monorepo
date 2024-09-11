@@ -27,12 +27,10 @@ module.exports = composeEnv(
   [require("@kie-tools/root-env/env"), require("@kie-tools/serverless-logic-web-tools-swf-dev-mode-image-env/env")],
   {
     vars: varsWithName({
-      /* (begin) This part of the file is referenced in `scripts/update-kogito-version` */
       SERVERLESS_LOGIC_WEB_TOOLS_DEVMODE_IMAGE__baseImageTag: {
         default: `${kogitoBaseBuilderImageEnv.registry}/${kogitoBaseBuilderImageEnv.account}/${kogitoBaseBuilderImageEnv.name}:${kogitoBaseBuilderImageEnv.buildTag}`,
         description: "Base image complete tag.",
       },
-      /* end */
     }),
     get env() {
       return {
