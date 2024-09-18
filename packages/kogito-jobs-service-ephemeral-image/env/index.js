@@ -47,7 +47,6 @@ module.exports = composeEnv([rootEnv], {
         account: getOrDefault(this.vars.KOGITO_JOBS_SERVICE_EPHEMERAL_IMAGE__account),
         name: getOrDefault(this.vars.KOGITO_JOBS_SERVICE_EPHEMERAL_IMAGE__name),
         buildTag: getOrDefault(this.vars.KOGITO_JOBS_SERVICE_EPHEMERAL_IMAGE__buildTag),
-        version: require("../package.json").version,
       },
     };
   },

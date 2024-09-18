@@ -47,7 +47,6 @@ module.exports = composeEnv([rootEnv], {
         account: getOrDefault(this.vars.SONATAFLOW_BUILDER_IMAGE__account),
         name: getOrDefault(this.vars.SONATAFLOW_BUILDER_IMAGE__name),
         buildTag: getOrDefault(this.vars.SONATAFLOW_BUILDER_IMAGE__buildTag),
-        version: require("../package.json").version,
       },
     };
   },

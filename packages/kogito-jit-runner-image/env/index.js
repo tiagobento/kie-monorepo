@@ -47,7 +47,6 @@ module.exports = composeEnv([rootEnv], {
         account: getOrDefault(this.vars.KOGITO_JIT_RUNNER_IMAGE__account),
         name: getOrDefault(this.vars.KOGITO_JIT_RUNNER_IMAGE__name),
         buildTag: getOrDefault(this.vars.KOGITO_JIT_RUNNER_IMAGE__buildTag),
-        version: require("../package.json").version,
       },
     };
   },
