@@ -234,9 +234,9 @@ function getSwfBuilderImageArgs() {
 }
 
 function getSwfDevModeImageArgs() {
-  const swfDevModeImageRegistry = buildEnv.swfDevModeImageEnv.registry;
-  const swfDevModeImageAccount = buildEnv.swfDevModeImageEnv.account;
-  const swfDevModeImageName = buildEnv.swfDevModeImageEnv.name;
+  const swfDevModeImageRegistry = buildEnv.slwtSwfDevModeImageEnv.registry;
+  const swfDevModeImageAccount = buildEnv.slwtSwfDevModeImageEnv.account;
+  const swfDevModeImageName = buildEnv.slwtSwfDevModeImageEnv.name;
   const swfDevModeImageTag = buildEnv.serverlessLogicWebTools.swfDevModeImage.tag;
 
   console.info("Serverless Logic Web Tools :: Dev Mode Image Registry: " + swfDevModeImageRegistry);
