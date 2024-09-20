@@ -15,9 +15,9 @@
 # specific language governing permissions and limitations
 # under the License.
 
-ARG BASE_IMAGE_URL
+ARG BASE_IMAGE_TAG
 
-FROM --platform=linux/amd64 $BASE_IMAGE_URL
+FROM --platform=linux/amd64 $BASE_IMAGE_TAG
 
 ENV PATH="${PATH}:/usr/share/maven/bin"
 

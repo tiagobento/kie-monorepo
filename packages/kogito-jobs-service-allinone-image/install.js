@@ -33,7 +33,7 @@ const activateCmd =
 
 execSync(
   `${activateCmd} && \
-  python3 ${sonataflowImageCommonDir}/resources/scripts/versions_manager.py --bump-to ${buildEnv.env.kogitoJobsServiceAllInOneImage.version} --source-folder ./resources`,
+  python3 ${sonataflowImageCommonDir}/resources/scripts/versions_manager.py --bump-to ${buildEnv.env.kogitoJobsServiceAllInOneImage.buildTag} --source-folder ./resources`,
   { stdio: "inherit" }
 );
 
